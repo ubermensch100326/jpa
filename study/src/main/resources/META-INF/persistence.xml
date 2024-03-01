@@ -6,8 +6,8 @@
                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
 
-    <persistence-unit name="jpapersistenceunit" transaction-type="RESOURCE_LOCAL">
-        <class>jpabasic.domain.User</class>
+    <persistence-unit name="jpabegin" transaction-type="RESOURCE_LOCAL">
+        <class>jpabasic.reserve.domain.User</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
