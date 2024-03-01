@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.study'
+version = '0.0.1-SNAPSHOT'
+
+ext["hibernate.version"] = "6.4.4.Final"
+
+java {
+    sourceCompatibility = '21'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+    implementation 'org.hibernate.orm:hibernate-hikaricp:6.4.4.Final'
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+    testImplementation 'ch.qos.logback:logback-classic:1.5.1'
+}
+
+test {
+    useJUnitPlatform()
+}
