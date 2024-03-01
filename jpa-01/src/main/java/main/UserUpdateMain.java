@@ -4,11 +4,11 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import jpabasic.reserve.domain.User;
+import jpabasic.domain.User;
 
 public class UserUpdateMain {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabegin");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpapersistenceunit");
 
         EntityManager entityManager = emf.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();

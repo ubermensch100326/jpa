@@ -1,4 +1,4 @@
-package jpabasic.reserve.domain;
+package jpabasic.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
