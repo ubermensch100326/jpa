@@ -31,6 +31,13 @@ import java.time.LocalDateTime;
  * 굳이 setter 메서드를 만들 필요가 없음
  */
 
+/*
+ * 객체와 테이블 매핑 : @Entity, @Table
+ * 기본 키 매핑 : @Id
+ * 필드와 컬럼 매핑 : @Column
+ * 연관관계 매핑 : @ManyToOne, @JoinColumn
+ */
+
 @Entity // DB 테이블과 매핑할 클래스임을 나타냄
 @Table(name = "user") // user 테이블과 매핑
 public class User {
